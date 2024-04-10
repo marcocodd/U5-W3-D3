@@ -1,4 +1,4 @@
-package marco.U5W3D3.entities.controllers;
+package marco.U5W3D3.controllers;
 
 import marco.U5W3D3.entities.BlogPost;
 import marco.U5W3D3.services.BlogPostService;
