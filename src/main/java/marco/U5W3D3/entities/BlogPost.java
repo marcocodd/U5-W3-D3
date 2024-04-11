@@ -15,6 +15,7 @@ public class BlogPost {
     private String contenuto;
     private int tempoDiLettura;
     @OneToOne
+    @JoinColumn(name = "autore_id")
     private Autore autore;
 
     public BlogPost() {

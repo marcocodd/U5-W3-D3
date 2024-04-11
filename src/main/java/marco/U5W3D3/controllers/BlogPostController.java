@@ -1,6 +1,7 @@
 package marco.U5W3D3.controllers;
 
 import marco.U5W3D3.entities.BlogPost;
+import marco.U5W3D3.payloads.BlogPostPayload;
 import marco.U5W3D3.services.BlogPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,8 +16,8 @@ public class BlogPostController {
     //prova
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BlogPost saveBlog(@RequestBody BlogPost body) {
-        return this.blogPostService.save(body);
+    public BlogPost saveBlog(@RequestBody BlogPostPayload body) {
+        return blogPostService.save(body);
     }
 
 }

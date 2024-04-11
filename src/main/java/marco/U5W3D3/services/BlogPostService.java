@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 public class BlogPostService {
     @Autowired
     private BlogPostDAO blogPostDAO;
+    @Autowired
+    private AutoreService autoreService;
 
 
     public BlogPost save(BlogPost newBlogPost) {
